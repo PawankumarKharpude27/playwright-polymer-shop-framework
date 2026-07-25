@@ -1,0 +1,33 @@
+
+# Dependencies
+node_modules/
+
+# Playwright artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+reports/
+allure-results/
+allure-report/
+
+# Local environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Logs and media
+logs/
+videos/
+screenshots/
+*.log
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+temp-*.js
+*.tmp

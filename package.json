@@ -1,0 +1,32 @@
+{
+  "name": "playwright-polymer-shop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Enterprise-grade Playwright + TypeScript automation framework for the Polymer Shop demo website.",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/smoke",
+    "test:sanity": "playwright test tests/sanity",
+    "test:regression": "playwright test tests/regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report reports/html",
+    "allure:report": "allure generate reports/allure-results --clean -o reports/allure-report && allure open reports/allure-report"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "automation",
+    "sdet",
+    "portfolio"
+  ],
+  "author": "Shree",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.1",
+    "allure-playwright": "^2.0.0",
+    "dotenv": "^16.6.0",
+    "winston": "^3.5.0"
+  }
+}

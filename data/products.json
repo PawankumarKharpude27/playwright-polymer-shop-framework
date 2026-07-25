@@ -1,0 +1,25 @@
+{
+  "categories": [
+    {
+      "name": "Men's Outerwear",
+      "route": "/list/mens_outerwear",
+      "item": {
+        "name": "Men's Tech Shell Full-Zip",
+        "route": "/detail/mens_outerwear/Men+s+Tech+Shell+Full-Zip"
+      }
+    },
+    {
+      "name": "Ladies Outerwear",
+      "route": "/list/ladies_outerwear",
+      "item": {
+        "name": "Ladies Tech Shell Full-Zip",
+        "route": "/detail/ladies_outerwear/Ladies+Tech+Shell+Full-Zip"
+      }
+    }
+  ],
+  "searchTerms": [
+    "hoodie",
+    "jacket",
+    "tech"
+  ]
+}

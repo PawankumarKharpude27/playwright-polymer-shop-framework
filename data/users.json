@@ -1,0 +1,15 @@
+{
+  "guest": {
+    "type": "guest"
+  },
+  "checkout": {
+    "email": "qa@example.com",
+    "firstName": "Test",
+    "lastName": "User",
+    "address": "123 Automation Ave",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98101",
+    "cardNumber": "4111111111111111"
+  }
+}
