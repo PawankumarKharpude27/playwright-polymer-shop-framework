@@ -1,5 +1,7 @@
 # Playwright Polymer Shop Automation Framework
 
+Enterprise-grade Playwright + TypeScript automation framework for the Polymer Shop demo site, designed for senior SDET portfolio showcase and interview storytelling.
+
 ![Framework Banner](assets/banner.svg)
 
 [![CI](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml)
