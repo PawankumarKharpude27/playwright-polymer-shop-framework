@@ -1,4 +1,4 @@
-name: Playwright CI
+name: Playwright Suite
 
 on:
   push:
@@ -28,8 +28,8 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
-      - name: Run full Playwright suite
-        run: npx playwright test --project=chromium --reporter=html,line,allure-playwright
+      - name: Run Playwright suite across supported browsers
+        run: npx playwright test --reporter=html,line,allure-playwright
 
       - name: Upload HTML report
         if: always()
@@ -38,11 +38,11 @@ jobs:
           name: playwright-html-report
           path: reports/html
 
-      - name: Upload test results
+      - name: Upload Playwright test artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-test-results
+          name: playwright-artifacts
           path: reports/test-results
 
       - name: Upload Allure results

@@ -1,12 +1,13 @@
 # Playwright Polymer Shop Automation Framework
 
-Enterprise-grade Playwright + TypeScript automation framework for the Polymer Shop demo site, designed for senior SDET portfolio showcase and interview storytelling.
+Enterprise-grade Playwright + TypeScript automation framework for the Polymer Shop demo site, designed for senior QA automation engineers and SDET interviews.
 
 ![Framework Banner](assets/banner.svg)
 
-[![CI](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml)
-[![Security](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml)
+[![Playwright CI](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml)
+[![Security Checks](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar.svg?style=flat-square)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/commits/main)
 
 ## Why this framework exists
 
