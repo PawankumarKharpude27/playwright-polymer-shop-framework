@@ -2,8 +2,8 @@
 
 ![Framework Banner](assets/banner.svg)
 
-[![CI](https://github.com/PawankumarSKharpude/Playwright-Polymer-Shop/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarSKharpude/Playwright-Polymer-Shop/actions/workflows/playwright.yml)
-[![Security](https://github.com/PawankumarSKharpude/Playwright-Polymer-Shop/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarSKharpude/Playwright-Polymer-Shop/actions/workflows/security.yml)
+[![CI](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml)
+[![Security](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ## Why this framework exists
