@@ -6,7 +6,7 @@ This repository is currently maintained for the latest main branch.
 
 ## Reporting a Vulnerability
 
-Please report security issues privately by emailing the maintainer at pawankumar.kharpude@example.com.
+Please report security issues privately by emailing the maintainer at pawankumarkharpue@gmail.com
 
 Do not open public issues for security vulnerabilities.
 
