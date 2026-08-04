@@ -1,7 +1,6 @@
 import { Locator, Page } from '@playwright/test';
 import { SELECTORS } from '../constants/selectors';
 import { WaitUtils } from '../utils/waits';
-import { CustomAssertions } from '../utils/assertions';
 
 export class HeaderComponent {
   readonly logoLink: Locator;

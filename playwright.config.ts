@@ -2,7 +2,10 @@ import path from 'path';
 import dotenv from 'dotenv';
 import { defineConfig, devices } from '@playwright/test';
 
-dotenv.config({ path: path.resolve(__dirname, '.env') });
+const envName = process.env.ENV_NAME ?? 'dev';
+const envFile = path.resolve(__dirname, 'env', `.env.${envName}`);
+
+dotenv.config({ path: envFile });
 
 const baseURL = process.env.BASE_URL ?? 'https://shop.polymer-project.org';
 const isCI = !!process.env.CI;

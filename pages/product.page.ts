@@ -32,9 +32,13 @@ export class ProductPage extends BasePage {
 
   async selectPreferredSize(preferredSize: string = 'M') {
     if (await this.sizeSelect.count()) {
-      const availableSizes = await this.sizeSelect.locator('option').evaluateAll((options) => options.map((option) => option.textContent?.trim() ?? ''));
+      const availableSizes = await this.sizeSelect
+        .locator('option')
+        .evaluateAll((options) => options.map((option) => option.textContent?.trim() ?? ''));
       const normalizedSizes = availableSizes.filter(Boolean);
-      const matchedSize = normalizedSizes.find((size) => size.toLowerCase() === preferredSize.toLowerCase()) ?? normalizedSizes[0];
+      const matchedSize =
+        normalizedSizes.find((size) => size.toLowerCase() === preferredSize.toLowerCase()) ??
+        normalizedSizes[0];
       if (matchedSize) {
         await this.selectSize(matchedSize);
       }

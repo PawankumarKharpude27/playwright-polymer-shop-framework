@@ -2,7 +2,11 @@ import { test, expect } from '../../fixtures/base';
 import { ROUTES } from '../../constants/routes';
 
 test.describe('Smoke suite', () => {
-  test('loads the home page and validates the main navigation', async ({ homePage, headerComponent, footerComponent }) => {
+  test('loads the home page and validates the main navigation', async ({
+    homePage,
+    headerComponent,
+    footerComponent,
+  }) => {
     await homePage.open();
     await homePage.verifyLoaded();
     await headerComponent.verifyVisible();
@@ -12,7 +16,11 @@ test.describe('Smoke suite', () => {
     await expect(homePage.page).toHaveTitle(/SHOP/i);
   });
 
-  test('opens the mens outerwear category from the home page', async ({ homePage, categoryPage, headerComponent }) => {
+  test('opens the mens outerwear category from the home page', async ({
+    homePage,
+    categoryPage,
+    headerComponent,
+  }) => {
     await homePage.open();
     await homePage.verifyLoaded();
     await headerComponent.verifyVisible();

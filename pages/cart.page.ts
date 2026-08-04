@@ -31,7 +31,10 @@ export class CartPage extends BasePage {
   }
 
   async proceedToCheckoutIfSupported() {
-    const visibleCheckout = await this.checkoutButton.first().isVisible().catch(() => false);
+    const visibleCheckout = await this.checkoutButton
+      .first()
+      .isVisible()
+      .catch(() => false);
     if (!visibleCheckout) {
       return false;
     }

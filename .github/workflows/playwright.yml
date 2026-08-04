@@ -10,7 +10,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 90
+    strategy:
+      matrix:
+        environment: [dev, qa, staging]
 
     steps:
       - name: Checkout repository
@@ -29,25 +32,29 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright suite across supported browsers
-        run: npx playwright test --reporter=html,line,allure-playwright
+        run: |
+          echo "Running tests for environment: $ENV_NAME"
+          ENV_NAME=${{ matrix.environment }} npx playwright test --reporter=html,line,allure-playwright
+        env:
+          ENV_NAME: ${{ matrix.environment }}
 
       - name: Upload HTML report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-html-report
+          name: playwright-html-report-${{ matrix.environment }}
           path: reports/html
 
       - name: Upload Playwright test artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: playwright-artifacts
+          name: playwright-artifacts-${{ matrix.environment }}
           path: reports/test-results
 
       - name: Upload Allure results
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results
+          name: allure-results-${{ matrix.environment }}
           path: reports/allure-results

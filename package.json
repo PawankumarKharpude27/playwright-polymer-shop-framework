@@ -8,6 +8,10 @@
     "test:smoke": "playwright test tests/smoke",
     "test:sanity": "playwright test tests/sanity",
     "test:regression": "playwright test tests/regression",
+    "test:api": "playwright test tests/api",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
     "report": "playwright show-report reports/html",
@@ -25,8 +29,16 @@
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.1",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
     "allure-playwright": "^2.0.0",
     "dotenv": "^16.6.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "5.5.4",
     "winston": "^3.5.0"
   }
 }
+

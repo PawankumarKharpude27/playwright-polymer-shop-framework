@@ -1,6 +1,5 @@
 import { Locator, Page } from '@playwright/test';
 import { BasePage } from './base.page';
-import { SELECTORS } from '../constants/selectors';
 
 export class CategoryPage extends BasePage {
   readonly heading: Locator;

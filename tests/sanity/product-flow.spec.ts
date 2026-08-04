@@ -2,13 +2,21 @@ import { test, expect } from '../../fixtures/base';
 import { ROUTES } from '../../constants/routes';
 
 test.describe('Sanity suite', () => {
-  test('adds a randomly selected product to cart from the category flow', async ({ homePage, headerComponent, categoryPage, productPage, cartPage }) => {
+  test('adds a randomly selected product to cart from the category flow', async ({
+    homePage,
+    headerComponent,
+    categoryPage,
+    productPage,
+    cartPage,
+  }) => {
     await homePage.open();
     await homePage.verifyLoaded();
 
     const selectedCategory = await headerComponent.openRandomCategory();
     await categoryPage.verifyLoaded();
-    await expect(categoryPage.heading).toContainText(new RegExp(selectedCategory.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+    await expect(categoryPage.heading).toContainText(
+      new RegExp(selectedCategory.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    );
     await categoryPage.selectRandomProduct();
 
     await productPage.verifyLoaded();
