@@ -4,10 +4,10 @@ Enterprise-grade Playwright + TypeScript automation framework for the Polymer Sh
 
 ![Framework Banner](assets/banner.svg)
 
-[![Playwright CI](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar)
-[![Security Checks](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar)
+[![Playwright CI](https://github.com/PawankumarKharpude27/playwright-polymer-shop-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/playwright-polymer-shop-framework/actions/workflows/playwright.yml)
+[![Security Checks](https://github.com/PawankumarKharpude27/playwright-polymer-shop-framework/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarKharpude27/playwright-polymer-shop-framework/actions/workflows/security.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-![Last Commit](https://img.shields.io/github/last-commit/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar)
+![Last Commit](https://img.shields.io/github/last-commit/PawankumarKharpude27/playwright-polymer-shop-framework)
 
 ## Why this framework exists
 
