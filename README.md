@@ -7,7 +7,7 @@ Enterprise-grade Playwright + TypeScript automation framework for the Polymer Sh
 [![Playwright CI](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/playwright.yml)
 [![Security Checks](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml/badge.svg)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/actions/workflows/security.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Last commit](https://img.shields.io/github/last-commit/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar.svg?style=flat-square)](https://github.com/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar/commits/main)
+![Last Commit](https://img.shields.io/github/last-commit/PawankumarKharpude27/Polymer-Shop_Playwright_Pawankumar)
 
 ## Why this framework exists
 
