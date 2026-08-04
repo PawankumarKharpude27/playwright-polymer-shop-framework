@@ -24,8 +24,11 @@
     "sdet",
     "portfolio"
   ],
-  "author": "Shree",
-  "license": "ISC",
+  "author": "Pawankumar S. Kharpude",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
   "devDependencies": {
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.1",
@@ -41,4 +44,3 @@
     "winston": "^3.5.0"
   }
 }
-
