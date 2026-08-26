@@ -153,7 +153,7 @@ npm run allure:report
 
 ## CV blurb (copy/paste)
 
-Playwright + TypeScript SDET framework for the Polymer Shop demo site — designed as an enterprise-grade portfolio project. Implements Page Object Model and Component Object Model, custom Playwright fixtures, cross-browser execution, Allure and HTML reporting, CI with GitHub Actions, and security checks. (Link: https://github.com/PawankumarKharpude27/playwright-polymer-shop-framework)
+Playwright + TypeScript SDET framework for the Polymer Shop demo site. Implements Page Object Model and Component Object Model, custom Playwright fixtures, cross-browser execution, Allure and HTML reporting, CI with GitHub Actions, and security checks. (Link: https://github.com/PawankumarKharpude27/playwright-polymer-shop-framework)
 
 ## Custom engineering-style utility
 
