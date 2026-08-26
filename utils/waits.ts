@@ -5,11 +5,6 @@ export class WaitUtils {
 
   async waitForStableDom() {
     await this.page.waitForLoadState('networkidle');
-    await this.page.waitForTimeout(2000);
-  }
-
-  async pauseForObservation(durationMs: number = 2000) {
-    await this.page.waitForTimeout(durationMs);
   }
 
   async waitForVisible(locator: Locator) {

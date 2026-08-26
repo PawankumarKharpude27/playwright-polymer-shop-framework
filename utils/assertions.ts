@@ -16,8 +16,6 @@ export class CustomAssertions {
   }
 
   async expectCountGreaterThan(locator: Locator, minimum: number) {
-    await expect(locator).toHaveCount(0);
-    const count = await locator.count();
-    expect(count).toBeGreaterThan(minimum);
+    await expect.poll(() => locator.count()).toBeGreaterThan(minimum);
   }
 }

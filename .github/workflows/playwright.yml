@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 90
     strategy:
       matrix:
-        environment: [dev, qa, staging]
+        environment: [dev]
 
     steps:
       - name: Checkout repository

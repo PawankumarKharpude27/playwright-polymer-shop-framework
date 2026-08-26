@@ -1,6 +1,6 @@
 # Playwright Polymer Shop Automation Framework
 
-Enterprise-grade Playwright + TypeScript automation framework for the Polymer Shop demo app, designed for senior QA automation engineers and SDET interviews.
+Playwright + TypeScript test automation for the Polymer Shop demo site, with deterministic UI flows, cross-browser projects, reporting, and CI security checks.
 
 ![Framework Banner](assets/banner.svg)
 
@@ -9,27 +9,13 @@ Enterprise-grade Playwright + TypeScript automation framework for the Polymer Sh
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Last Commit](https://img.shields.io/github/last-commit/PawankumarKharpude27/playwright-polymer-shop-framework)
 
-## Why this framework exists
+## What This Demonstrates
 
-This repository is a portfolio-grade automation framework built to demonstrate how a senior SDET or QA automation architect would structure a maintainable, scalable, and interview-worthy Playwright test framework.
+This repository demonstrates maintainable Playwright structure around a public demo shop: page and component objects, shared fixtures, data-backed test flows, browser projects, failure artifacts, and CI checks.
 
-## Professional GitHub presentation
+## Scope
 
-This repository is structured to feel like a production-ready engineering asset for recruiters, hiring managers, and technical reviewers. It includes:
-- a polished GitHub banner and badges
-- a professional README and architecture story
-- contributor and review templates
-- release automation and dependency updates
-- security-focused CI workflows
-
-## Ownership and branding
-
-Maintainer: Pawankumar S. Kharpude
-
-This framework is designed to be professionally presented in GitHub, interviews, and enterprise-style technical reviews. For branding and protection:
-- use the MIT license for code reuse
-- add a trademark for product names or framework branding if you want commercial protection
-- retain copyright attribution in the repository files
+The target is a public demo application, so the suite focuses on browser behavior and lightweight HTTP contract checks. The repository uses one configured `dev` target until additional systems exist.
 
 ## Architecture overview
 
@@ -68,10 +54,10 @@ flowchart TD
 - Reusable fixtures and abstraction layers
 - Cross-browser and mobile execution
 - HTML, Allure, screenshot, video, and trace reporting on failure
-- Environment-based configuration using dotenv
+- Environment configuration using dotenv with a single `baseURL` source
 - Stronger assertions and reusable utilities for maintainable tests
-- Security-focused repository hygiene and CI checks
-- Designed for maintainability, reliability, and interview readiness
+- Gitleaks and dependency auditing in CI
+- Deterministic regression coverage for responsive navigation
 
 ## Tech stack
 

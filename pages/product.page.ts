@@ -27,7 +27,6 @@ export class ProductPage extends BasePage {
     if (await this.sizeSelect.count()) {
       await this.sizeSelect.selectOption(size);
     }
-    await this.waits.pauseForObservation();
   }
 
   async selectPreferredSize(preferredSize: string = 'M') {
@@ -35,13 +34,13 @@ export class ProductPage extends BasePage {
       const availableSizes = await this.sizeSelect
         .locator('option')
         .evaluateAll((options) => options.map((option) => option.textContent?.trim() ?? ''));
-      const normalizedSizes = availableSizes.filter(Boolean);
-      const matchedSize =
-        normalizedSizes.find((size) => size.toLowerCase() === preferredSize.toLowerCase()) ??
-        normalizedSizes[0];
-      if (matchedSize) {
-        await this.selectSize(matchedSize);
+      const matchedSize = availableSizes.find(
+        (size) => size.toLowerCase() === preferredSize.toLowerCase(),
+      );
+      if (!matchedSize) {
+        throw new Error(`Size "${preferredSize}" is not available for this product.`);
       }
+      await this.selectSize(matchedSize);
     }
   }
 
@@ -49,11 +48,9 @@ export class ProductPage extends BasePage {
     if (await this.quantitySelect.count()) {
       await this.quantitySelect.selectOption(quantity);
     }
-    await this.waits.pauseForObservation();
   }
 
   async addToCart() {
     await this.addToCartButton.click();
-    await this.waits.pauseForObservation();
   }
 }
